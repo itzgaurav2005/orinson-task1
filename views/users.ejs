@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #FFFBE6;
+        }
+        td{
+            padding: 0 15px;
+        }
+        .form{
+            width: 300px;
+            margin: 3px;
+            padding: 3px;
+        }
+        .input-box{
+            display: flex;
+            justify-content: space-between;
+            margin: 5px;
+        }
+        #password{
+            margin-bottom: 10px;
+        }
+        button{
+            margin-left: 90px;
+            margin-top: 10px;
+            height: 40px;
+            width: 80px;
+            border-radius: 10%;
+            box-shadow: 1px 0px 10px;
+            background-color: #CBE2B5;
+        }
+        .bada-div{
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+        }
+        .chotu{
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+        }
+        .create-button{
+            display: flex;
+            justify-content: center;
+            margin-right: 125px;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Page</title>
+</head>
+<body>
+    <div class="chotu"><h1>Contact Form</h1></div>
+    <div class="bada-div">
+    <form action="/" method="post">
+       <div class="form"> <div class="input-box"><label for="">Full name</label>
+            <input type="text" required name="fullName" placeholder="Enter Your Full Name Here" ></div>
+        
+        <div class="input-box"><label for="">Email</label>
+            <input type="text" required name="email" placeholder="example@gmail.com" ></div> 
+        <div class="input-box" id="password">
+            <label for="">Message</label>
+        <input type="text"  required name="message" placeholder="Enter your message here">
+        </div>
+        
+        <button type="submit" style="font-size: large;">Submit</button></div>
+    </form>
+</div>
+    <script>
+        var redirect=function(){
+    window.location.href="http://localhost:3000/"
+   }
+    </script>
+</body>
+</html>
